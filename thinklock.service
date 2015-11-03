@@ -1,0 +1,16 @@
+[Unit]
+Description=slocker
+Before=sleep.target
+
+[Service]
+User=gxg
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/home/gxg/bin/thinklock
+
+[Install]
+WantedBy=sleep.target
+
+# https://bbs.archlinux.org/viewtopic.php?pid=1170536#p1170536
+
+/* vim: set ft=systemd tw=0 ts=2 sw=2 sts=2 fdm=marker fmr={{{,}}} et: */

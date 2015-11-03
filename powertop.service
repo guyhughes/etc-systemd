@@ -1,0 +1,12 @@
+[Unit]
+Description=Powertop Auto-Tune
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
+
+# https://wiki.archlinux.org/index.php/Powertop
+/* vim: set ft=systemd tw=0 ts=2 sw=2 sts=2 fdm=marker fmr={{{,}}} et: */
