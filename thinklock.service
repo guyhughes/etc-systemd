@@ -6,7 +6,7 @@ Before=sleep.target
 User=gxg
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/home/gxg/bin/thinklock
+ExecStart=/home/gxg/bin/thinklock mute
 
 [Install]
 WantedBy=sleep.target
